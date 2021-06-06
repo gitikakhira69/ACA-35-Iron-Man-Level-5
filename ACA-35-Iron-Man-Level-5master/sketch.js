@@ -91,7 +91,7 @@ function draw() {
     var temp = spikesGroup.get(i);
     if(temp.isTouching(iron)){
       diamondScore = diamondScore - 5;
-      iron.velocityX = -10;
+      temp.destroy();
     }
   }
   //a bug
